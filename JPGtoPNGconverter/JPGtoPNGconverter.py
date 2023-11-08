@@ -9,7 +9,9 @@ image_folder = sys.argv[1]
 output_folder = sys.argv[2]
 
 #check is new/ exist, if not create
-
+# loop through pokemon
+# convert images to png
+# save to new folder
 def convertImg (image_folder,output_folder):
     if os.path.isdir(output_folder):
         print((f"{output_folder} folder is really exist"))
@@ -25,8 +27,6 @@ def convertImg (image_folder,output_folder):
                 img = Image.open(f)
                 img.save(new_file,"png")
 
-# loop through pokemon
-# convert images to png
-# save to new folder
+
 
 convertImg(image_folder,output_folder)
